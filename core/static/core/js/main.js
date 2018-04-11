@@ -29,6 +29,7 @@ $(document).ready( function (){
     click: function() {
         var messageInputDom = $('#chat-message-input');
         var message = $(messageInputDom).val();
+        $(messageInputDom).val('');
         chatSocket.send(JSON.stringify({
             'message': name + ': ' + message
         }));

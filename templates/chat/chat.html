@@ -20,6 +20,7 @@
               <input type="hidden" id="name" value={{ name }} />
               <input type="hidden" id="room_name" value={{ room_name }} />
               <hr>
+              <p>Logado como: {{ name|cut:'"' }}</p>
               <div class="row text-left">
                 <div class="col">
                   <button id="chat-message-submit" type="button" class="btn btn-info">
